@@ -1,0 +1,145 @@
+@import '__var.sass'
+#header-home
+    height: auto
+    position: relative
+    .bg-image
+        position: absolute
+        left: 0
+        z-index: 0
+        right: 0
+        bottom: 0
+        top: 0
+        width: 100%
+        height: 100%
+.icon-dev 
+    border-radius: 100px
+    position: relative
+    display: inline-block
+    font-size: 3.5rem
+    line-height: 94px
+    overflow: hidden
+    width: 100px
+    height: 100px
+    background-color: $color-primary
+.note-dev
+    border-top-left-radius: 16px
+.decoration-dev-1
+    position: absolute
+    right: 0
+    top: -120px
+    height: 350px
+.decoration-dev-2
+    position: absolute
+    left: 0
+    bottom: -50px
+    height: 350px
+.card-dev
+    position: relative
+    .card-dev-child
+        box-shadow: 0px 16px 23px rgba(0, 0, 0, 0.08);
+    &::after
+        position: absolute
+        content: ''
+        right: -10px
+        top: -10px
+        height: 100px
+        width: 20px
+        border-radius: 8px
+        background-color: $color-primary
+    &::before  
+        position: absolute
+        content: ''
+        left: -10px
+        z-index: 10
+        bottom: 30px
+        height: 30px
+        width: 20px
+        border-radius: 8px
+        background-color: $color-primary
+.questions 
+    .question
+        transition: all .3s ease-in-out
+        position: relative
+        background-color: white
+        &::after
+            content: ''
+            background-color: $color-primary
+            left: -40px
+            top: 5px
+            opacity: 0
+            transition: all .3s ease-in-out
+            width: 62px
+            position: absolute
+            height: 46px
+            border-bottom-left-radius: 12px
+            border-top-left-radius: 12px
+            border-top-right-radius: 36px
+            border-bottom-right-radius: 36px
+        &:hover
+            background-color: gainsboro
+    .question.active
+        border: none !important
+        padding-left: 4rem !important
+        position: relative
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+        &::after
+            content: ''
+            background-color: $color-primary
+            left: -20px
+            opacity: 1
+            top: 5px
+            width: 62px
+            position: absolute
+            height: 46px
+            border-bottom-left-radius: 12px
+            border-top-left-radius: 12px
+            border-top-right-radius: 36px
+            border-bottom-right-radius: 36px
+
+.card-answer
+    box-shadow: 0px 5px 49px rgba(0, 0, 0, 0.1);
+    position: relative
+    background-color: rgba(255, 255, 255, 0.55)
+    backdrop-filter: blur(16px)
+    border-radius: 16px
+    &::after
+        position: absolute
+        content: ''
+        left: -10px
+        top: -10px
+        height: 26px
+        width: 42%
+        border-radius: 8px
+        background-color: $color-primary
+    &::before 
+        position: absolute
+        content: ''
+        right: -10px
+        bottom: -10px
+        height: 36px
+        width: 36px
+        border-radius: 8px
+        background-color: $color-primary
+
+.decoration-faq
+    position: absolute
+    bottom: -50px
+    z-index: 0
+    right: 0
+    width: 40%
+@media screen and (max-width: 768px) 
+    .decoration-faq
+        width: 62%
+        opacity: .3
+#marketing-content
+    background-image: url('../assets/image/3.jpg')
+    position: relative
+    background-size: cover
+    background-attachment: fixed
+    background-repeat: no-repeat
+#hub-content
+    background-image: url('../assets/image/4.jpg')
+    position: relative
+    background-size: cover
+    background-attachment: fixed
+    background-repeat: no-repeat
