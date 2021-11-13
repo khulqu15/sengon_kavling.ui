@@ -64,7 +64,7 @@
             <div class="bg-m-primary rounded-8 mb-2 px-5 py-2 d-inline-block" data-aos="fade-right"></div>
             <h2 class="fw-bolder ff-1 mb-3" data-aos="fade-right">Pertanyaan Seputar Kami</h2>
             <div class="questions">
-              <div class="question py-3 px-4 mt-3 mb-2 rounded-8 border" role="button" data-aos="fade-right" v-for="item, index in questions" :key="index" :class="{'active': index == question}" @click="question = index, gotoAnswer()">
+              <div class="question py-3 px-4 mt-3 mb-2 rounded-8 border" role="button" v-for="item, index in questions" :key="index" :class="{'active': index == question}" @click="question = index, gotoAnswer()">
                 <span>{{ item.name }}</span>
               </div>
             </div>
