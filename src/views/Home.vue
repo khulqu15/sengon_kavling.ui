@@ -69,9 +69,9 @@
               </div>
             </div>
           </b-col>
-          <b-col md="5" class="text-start position-relative pt-5">
-            <div class="sticky-top d-inline-block" data-aos="fade-left" style="top: 100px; z-index: 50">
-              <div class="card-answer p-5 rounded-16" id="answerofquestion">
+          <b-col md="5" class="text-start position-relative pt-5 overflow-hidden">
+            <div class="sticky-top d-inline-block w-100" data-aos="fade-up" style="top: 100px; z-index: 50">
+              <div class="card-answer p-5 rounded-16 w-100" id="answerofquestion">
                 <h4 class="ff-1 fw-bolder">{{ questions[question].name }}</h4>
                 <div v-if="question == 0">
                   <p class="ff-2 fs-7 mb-0">Sebelum Grand Sengon Purwosari Kita Mengembangkan Di Cepu Blora Jawa Tengah & Surabaya,Sidoarjo Jawa timur Sudah banyak yg progres bangun dan sudah serah terima kunci</p>

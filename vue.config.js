@@ -1,6 +1,5 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-    ? '/grand-view/'
+    ? '/sengon_kavling.prototype/'
     : '/'
-
 }
