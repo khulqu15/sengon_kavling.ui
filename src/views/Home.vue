@@ -399,7 +399,9 @@
             </div>
             <slick :options="videoSlider" ref="videoSlider">
               <div v-for="item, index in videos" :key="index">
-                <h3 class="ff-1 fw-bolder mb-4">{{ item.name }}</h3>
+                <div class="text-start">
+                  <h5 class="ff-1 fw-bolder mb-4">{{ item.name }}</h5>
+                </div>
                 <youtube player-width="480" player-height="240" :video-id="item.link"/>
               </div>
             </slick>
@@ -514,10 +516,10 @@ export default {
         { name: 'Hadap Kavling / Ruko?' },
       ],
       videos: [
-        { name: 'Review Lokasi Kavling', link: getIdFromURL('https://www.youtube.com/watch?v=qWAG6O9VMs4'), time: getTimeFromURL('https://www.youtube.com/watch?v=qWAG6O9VMs4')},
-        { name: 'Arah Menuju Ke Lokasi', link: getIdFromURL('https://www.youtube.com/watch?v=5B8O_oNnZ9o'), time: getTimeFromURL('https://www.youtube.com/watch?v=5B8O_oNnZ9o')},
-        { name: 'Testimoni Buyer', link: getIdFromURL('https://www.youtube.com/watch?v=QLn5t6CQ-TM'), time: getTimeFromURL('https://www.youtube.com/watch?v=QLn5t6CQ-TM')},
-        { name: 'Testimoni Saat AJB Notaris', link: getIdFromURL('https://www.youtube.com/watch?v=GbT3dlk4Hkk'), time: getTimeFromURL('https://www.youtube.com/watch?v=GbT3dlk4Hkk')},
+        { name: 'AJB Notaris Grand Sengon Purwosari arah Pandaan dekat Malang', link: getIdFromURL('https://youtu.be/uopW2zKGQa0'), time: getTimeFromURL('https://youtu.be/uopW2zKGQa0')},
+        { name: 'Ruko dan kavling siap bangun Grand Sengon Purwosari', link: getIdFromURL('https://youtu.be/U_fhVm6I_Aw'), time: getTimeFromURL('https://youtu.be/U_fhVm6I_Aw')},
+        { name: 'Ruko dan Kavling Siap Bangun', link: getIdFromURL('https://youtu.be/2gCoGz8BfmA'), time: getTimeFromURL('https://youtu.be/2gCoGz8BfmA')},
+        { name: 'Ruko dan Kavling Terlaris', link: getIdFromURL('https://youtu.be/N_4QBG4tNcs'), time: getTimeFromURL('https://youtu.be/N_4QBG4tNcs')},
       ],
       galleries: [
         { name: 'Foto Kavling 1' },
