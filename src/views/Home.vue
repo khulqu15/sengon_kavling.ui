@@ -518,8 +518,8 @@ export default {
       videos: [
         { name: 'AJB Notaris Grand Sengon Purwosari arah Pandaan dekat Malang', link: getIdFromURL('https://youtu.be/uopW2zKGQa0'), time: getTimeFromURL('https://youtu.be/uopW2zKGQa0')},
         { name: 'Ruko dan kavling siap bangun Grand Sengon Purwosari', link: getIdFromURL('https://youtu.be/U_fhVm6I_Aw'), time: getTimeFromURL('https://youtu.be/U_fhVm6I_Aw')},
-        { name: 'Ruko dan Kavling Siap Bangun', link: getIdFromURL('https://youtu.be/2gCoGz8BfmA'), time: getTimeFromURL('https://youtu.be/2gCoGz8BfmA')},
-        { name: 'Ruko dan Kavling Terlaris', link: getIdFromURL('https://youtu.be/N_4QBG4tNcs'), time: getTimeFromURL('https://youtu.be/N_4QBG4tNcs')},
+        { name: 'TESTIMONI ! Ruko dan Kavling Siap Bangun', link: getIdFromURL('https://youtu.be/2gCoGz8BfmA'), time: getTimeFromURL('https://youtu.be/2gCoGz8BfmA')},
+        { name: 'TESTIMONI ! Ruko dan Kavling Terlaris', link: getIdFromURL('https://youtu.be/N_4QBG4tNcs'), time: getTimeFromURL('https://youtu.be/N_4QBG4tNcs')},
       ],
       galleries: [
         { name: 'Foto Kavling 1' },
