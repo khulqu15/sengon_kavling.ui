@@ -14,6 +14,8 @@ import 'slick-carousel/slick/slick.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import VueYouTubeEmbed from 'vue-youtube-embed'
+import Vuelidate from 'vuelidate'
+Vue.use(Vuelidate)
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false

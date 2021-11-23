@@ -16,13 +16,15 @@
       <b-container class="py-5 position-relative">
         <b-row>
           <b-col md="7" class="text-start py-5">
-            <div class="bg-m-primary rounded-8 px-5 py-2 mt-5 d-inline-block"></div>
-            <div class="ms-4">
-              <h2 class="ff-1 fw-bolder mb-4" data-aos="fade-right">Kavling Grand Sengon Purwosari Pasuruan</h2>
-              <p class="ff-2 fs-6 mb-5" data-aos="fade-up">Saatnya berinvestasi property sekarang, pilihannya kavling dan ruko Grand Sengon Purwosari, Pandaan. Berlokasi Nol Jalan Kabupaten yang terhubung dengan 2 jalan propinsi Malang - Surabaya dan Pasuruan - Surabaya. Dikelilingi oleh tempat wisata dan kawasan industri di Pandaan, menjadikan Grand Sengon Purwosari sebagai pilihan terbaik. Dapatkan promo diskon selama launching. Segera hubungi kami untuk survey lokasi dan booking.</p>
-              <a class="btn-m-primary mb-5" data-aos="fade-up" href="#">
-                <icon :icon="icon.downIcon"/>
-              </a>
+            <div class="bg-m-primary rounded-8 px-5 py-2 mt-5 d-md-inline-block d-none"></div>
+            <div class="ms-4 mt-md-0 pt-md-0 pt-5 mt-5">
+              <div class="mt-md-0 mt-5">
+                <h2 class="ff-1 fw-bolder mb-4" data-aos="fade-right">Ruko dan Kavling Siap Bangun Grand Sengon Purwosari  dekat Pandaan</h2>
+                <p class="ff-2 fs-6 mb-5" data-aos="fade-up">Saatnya berinvestasi property sekarang, pilihannya kavling dan ruko Grand Sengon Purwosari, Pandaan. Berlokasi Nol Jalan Kabupaten yang terhubung dengan 2 jalan propinsi Malang - Surabaya dan Pasuruan - Surabaya. Dikelilingi oleh tempat wisata dan kawasan industri di Pandaan, menjadikan Grand Sengon Purwosari sebagai pilihan terbaik. Dapatkan promo diskon selama launching. Segera hubungi kami untuk survey lokasi dan booking.</p>
+                <a class="btn-m-primary mb-5" data-aos="fade-up" href="#">
+                  <icon :icon="icon.downIcon"/>
+                </a>
+              </div>
             </div>
           </b-col>
         </b-row>
@@ -36,9 +38,10 @@
         <h2 class="ff-1 fw-bolder mb-3" data-aos="fade-down">Siapa Developernya ?</h2>
         <div class="bg-m-primary rounded-8 mb-4 px-5 py-2 d-inline-block"></div>
         <b-row class="justify-content-md-center text-start">
-          <b-col md="2" class="text-center">
-            <div class="icon-dev mt-4 mb-3" data-aos="fade-right">
-              <icon :icon="icon.usersIcon"/>
+          <b-col md="4" class="text-center">
+            <div class="py-2">
+              <img src="@/assets/image/logo2.png" class="w-50 mt-md-4 mt-0" alt="Logo Syar'i Land Developer">
+              <img src="@/assets/image/logo3.jpg" class="w-50 mt-md-4 mt-0" alt="Logo Syar'i Land Developer">
             </div>
           </b-col>
           <b-col md="6">
@@ -46,7 +49,7 @@
               <div class="pt-4 ps-4 bg-white rounded-16 overflow-hidden position-relative card-dev-child">
                 <h4 class="ff-1 fw-bolder">Syar’i Land</h4>
                 <p class="ff-2 fs-8 mb-1">Member DPS (Developer Property Syariah)</p>
-                <div class="py-1 px-3 ff-2 fs-8 bg-m-primary d-inline-block rounded-8">Tersebar 600-an Project Seluruh Indonesia</div>
+                <div class="py-1 px-3 ff-2 fs-8 bg-m-primary d-inline-block rounded-8 text-white">Tersebar 600-an Project Seluruh Indonesia</div>
                 <div class="note-dev ff-2 fs-8 px-4 py-3 mt-3 bg-m-primary-light">
                   Member DPS Insya allah Projeck nya Tidak Ada Yang Abal - Abal Real project real syariah
                 </div>
@@ -205,10 +208,10 @@
       <b-container class="py-3">
         <b-row>
           <b-col md="12" class="text-start">
-            <h2 class="ff-1 fw-bolder mb-3 text-dark" data-aos="fade-left">Desain Ruko</h2>
-            <div class="bg-dark rounded-8 mb-4 px-5 py-2 d-inline-block" data-aos="fade-right"></div>
+            <h2 class="ff-1 fw-bolder mb-3 text-white" data-aos="fade-left">Desain Ruko</h2>
+            <div class="bg-white rounded-8 mb-4 px-5 py-2 d-inline-block" data-aos="fade-right"></div>
           </b-col>
-          <b-col md="6" class="py-2" v-for="item, index in designs" :key="index">
+          <b-col md="4" class="py-2" v-for="item, index in designs" :key="index">
             <div class="card-simple-1" data-aos="fade-left" @click="design = index, $bvModal.show('bv-design')">
               <div class="image">
                 <img :src="require('@/assets/image/design/'+ parseInt(index + 1) + '.jpg')" class="object-fit" alt="Booking Unit">
@@ -372,7 +375,52 @@
               </div>
             </div>
             <div class="p-3 text-start ff-2">
-              {{ item.text }}
+              <p>{{ item.text }}</p>
+              <p class="fw-bolder">Investasi menguntungkan..</p>
+              <p>Jaminan pasive income Karena sudah ada pengusaha yang siap sewa ruko yg anda beli sampai dengan 20 jt / tahun</p>
+            </div>
+          </b-col>
+        </b-row>
+        <b-row class="pt-5">
+          <b-col md="5" class="text-start">
+            <div class="py-4">
+              <h2 class="ff-1 fw-bolder mb-3 text-dark">Insya Allah Skema 100% syariah</h2>
+              <div class="bg-m-primary rounded-8 mb-4 px-5 py-2 d-inline-block"></div>
+            </div>
+          </b-col>
+          <b-col md="7">
+            <div class="row">
+              <div class="col-md-6" v-for="(item, index) in schemas" :key="index">
+                <div class="text-start p-3 border rounded my-2">
+                  <b>{{ item.name }}</b>
+                </div>
+              </div>
+            </div>
+          </b-col>
+        </b-row>
+      </b-container>
+    </b-container>
+
+    <b-container fluid class="position-relative py-5" id="promo-content">
+      <div class="overlay-black" style="background-color: rgba(0,0,0,0.85) !important; opacity: .85 !important"></div>
+      <b-container class="position-relative text-white py-5">
+        <div class="text-start">
+          <h2 class="ff-1 fw-bolder mb-3 text-white">Harga Promo Kavling Indah</h2>
+          <div class="bg-m-primary rounded-8 mb-4 px-5 py-2 d-inline-block"></div>
+        </div>
+        <b-row class="justify-content-md-center">
+          <b-col md="6" class="py-5">
+            <div class="px-4 text-start">
+              <h4 class="fw-bolder ff-1 mb-4">Kavling Siap Bangun</h4>
+              <p class="ff-2 mb-0">Harga promo mulai :</p>
+              <h1 class="ff-1"><sub style="font-size: 1.3rem; color: gainsboro">90 Juta</sub> <u>70 Juta</u> <span class="badge bg-danger">20%</span></h1>
+            </div>
+          </b-col>
+          <b-col md="6" class="py-5">
+            <div class="px-4 text-start">
+              <h4 class="fw-bolder ff-1 mb-4">Investasi ruko</h4>
+              <p class="ff-2 mb-0">Harga promo mulai :</p>
+              <h1 class="ff-1"><sub style="font-size: 1.3rem; color: gainsboro">299 Juta</sub> <u>199 Juta</u> <span class="badge bg-danger"><span style="font-size: 1rem;">diskon</span> 100jt</span></h1>
             </div>
           </b-col>
         </b-row>
@@ -427,6 +475,28 @@
                 </a>
              </div>
           </b-col>
+          <b-col md="8" class="pt-5">
+            <b-card class="text-start text-dark">
+                <template #header>
+                  <div class="p-3">
+                    <h4 class="ff-1 mb-0 fw-bolder">CS Kami Akan Membantu Anda Mengirimkan Informasi</h4>
+                  </div>
+                </template>
+                <div class="p-3">
+                  <form @submit.prevent="submit">
+                    <b-form-group label="Nama Anda" label-for="name-input" class="py-2">
+                      <b-form-input id="name-input" :state="validateState('name')" aria-describedby="name-feedback" v-model="input.name"></b-form-input>
+                      <b-form-feedback id="name-feedback">Nama tidak boleh kosong.</b-form-feedback>
+                    </b-form-group>
+                    <b-form-group label="Nomor Hp Anda" label-for="phone-input" class="py-2">
+                      <b-form-input id="name-input" :state="validateState('phone')" aria-describedby="name-feedback" v-model="input.phone"></b-form-input>
+                      <b-form-feedback id="name-feedback">Nomor Hp tidak boleh kosong.</b-form-feedback>
+                    </b-form-group>
+                    <button class="btn-m-primary py-3 px-5 mt-3" type="submit" :disabled="submitStatus === 'PENDING'">Kirim</button>
+                  </form>
+                </div>
+            </b-card>
+          </b-col>
         </b-row>
       </b-container>
     </b-container>
@@ -440,15 +510,29 @@ import leftIcon from '@iconify/icons-akar-icons/chevron-left'
 import rightIcon from '@iconify/icons-akar-icons/chevron-right'
 import usersIcon from '@iconify/icons-ph/users-three-duotone'
 import whatsappIcon from '@iconify/icons-akar-icons/whatsapp-fill'
+import { required } from 'vuelidate/lib/validators'
+import { validationMixin } from "vuelidate"
 import { getIdFromURL, getTimeFromURL } from 'vue-youtube-embed'
 export default {
+  mixins: [validationMixin],
   name: 'Home',
   metaInfo: {
     title: 'Introduction',
     titleTemplate: '%s | Grand Sengon View',
   },
+  validations: {
+    input: {
+      name: { required },
+      phone: { required },
+    }
+  },
   data() {
     return {
+      input: {
+        name: '',
+        phone: '',
+      },
+      submitStatus: null,
       icon: {
         downIcon,
         leftIcon,
@@ -489,9 +573,9 @@ export default {
       comision: 0,
       design: 0,
       comisions: [
-        { name: 'Penyerahan Ruko Kepada Client' },
-        { name: 'Penyerahan Ruko Kepada Client' },
-        { name: 'Penyerahan Ruko Kepada Client' },
+        { name: 'Penyerahan komisi agency marketing' },
+        { name: 'Penyerahan komisi agency marketing' },
+        { name: 'Penyerahan komisi agency marketing' },
       ],
       orders: [
         { name: 'Booking Kavling Mudah' },
@@ -499,6 +583,7 @@ export default {
         { name: 'Booking Kavling Strategis' },
       ],
       designs: [
+        { name: 'Desain Ruko Indah Lantai 1' },
         { name: 'Desain Ruko Indah Lantai 2' },
         { name: 'Desain Ruko Indah Lantai 3' },
       ],
@@ -535,6 +620,13 @@ export default {
         { name: 'Investasi Masa Kini', text: 'Kenapa Dikatakan Investasi masa Kini : Lokasi Nol Jalan Raya Lalu Lintas Ramai Cocok Untuk Usaha / Bisnis Usaha Buat Bayar Angsuran' },
         { name: 'Investasi Masa Kini', text: 'Kenapa Dikatakan Investasi Masa Depan : Lokasi Nol Jalan Raya Harga  Property nya Akan Cepat Naik Melambung Tinggi' },
       ],
+      schemas: [
+        { name: 'Tanpa bank' },
+        { name: 'Tanpa denda' },
+        { name: 'Tanpa sita' },
+        { name: 'Tanpa akad bathil' },
+        { name: 'Tanpa bunga' }
+      ],
       locations: [
         { name: 'Lokasi Kavling' },
         { name: 'Lokasi Kavling' },
@@ -557,6 +649,24 @@ export default {
     HelloWorld
   },
   methods: {
+    validateState(name) {
+      const { $dirty, $error } = this.$v.input[name];
+      return $dirty ? !$error : null;
+    },
+    submit() {
+      let cpContact = '+6281252203567'
+      let message = 'Haloo.. Nama saya adalah ' + this.input.name + ', Saya ingin mengetahui informasi lebih lanjut mengenai Kavling Grand Sengon dengan nomor hp ' + this.input.phone
+      this.$v.$touch()
+      if (this.$v.$invalid) {
+        return
+      } else {
+        var url = 'https://api.whatsapp.com/send?phone=' 
+          + cpContact
+          + '&text=' 
+          + encodeURIComponent(message)
+        window.open(url)
+      }
+    },
     gotoAnswer() {
       window.location.href = '#answerofquestion'
     },

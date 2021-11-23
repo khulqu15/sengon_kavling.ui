@@ -1,12 +1,9 @@
 <template>
     <div id="nav">
-        <b-navbar toggleable="lg" type="dark" class="py-0 animate__animated"
+        <b-navbar toggleable="lg" type="dark" class="py-3 animate__animated"
             :class="{'nav-fixed animate__bounceInDown': navMode == 'fixed'}">
-            <b-navbar-brand href="#header-home" class="py-0">
-                <div class="icon-navbar d-inline-block">
-                    <icon class="fw-bold fs-3" :icon="icon.earthIcon"/>
-                </div>
-                <span class="ff-1 mx-2 fw-6">Grand Sengon Purwosari</span>
+            <b-navbar-brand href="#header-home" class="px-3">
+                <img src="@/assets/image/logo1.png" style="width: 140px" alt="Logo Grand View">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse">
                 <icon class="text-dark" :icon="icon.menuIcon"/>
