@@ -526,8 +526,8 @@ export default {
   name: 'Home',
   metaInfo() {
     return {
-      title: 'Kavling Indah Strategis',
-      titleTemplate: '%s | Grand Sengon View',
+      title: 'Grand Sengon View',
+      titleTemplate: '%s | Kavling Indah Strategis',
       meta: [
         { name: 'description', content:  'Saatnya berinvestasi property sekarang, pilihannya kavling dan ruko Grand Sengon Purwosari, Pandaan. Berlokasi Nol Jalan Kabupaten yang terhubung dengan 2 jalan propinsi Malang - Surabaya dan Pasuruan - Surabaya. Dikelilingi oleh tempat wisata dan kawasan industri di Pandaan, menjadikan Grand Sengon Purwosari sebagai pilihan terbaik. Dapatkan promo diskon selama launching. Segera hubungi kami untuk survey lokasi dan booking.' },
         { property: 'og:title', content: "Grand Sengon View - Kavling Indah Strategis" },
