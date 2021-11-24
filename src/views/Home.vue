@@ -40,8 +40,16 @@
         <b-row class="justify-content-md-center text-start">
           <b-col md="4" class="text-center">
             <div class="py-2">
-              <img src="@/assets/image/logo2.png" class="w-50 mt-md-4 mt-0" alt="Logo Syar'i Land Developer">
-              <img src="@/assets/image/logo3.jpg" class="w-50 mt-md-4 mt-0" alt="Logo Syar'i Land Developer">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="pt-3">
+                    <img src="@/assets/image/logo2.png" class="w-100 mt-md-4 mt-0" alt="Logo Syar'i Land Developer">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <img src="@/assets/image/logo3.png" class="w-75 mt-md-4 mt-0" alt="Logo Syar'i Land Developer">
+                </div>
+              </div>
             </div>
           </b-col>
           <b-col md="6">
@@ -304,14 +312,14 @@
             <div class="bg-m-primary rounded-8 mb-4 px-5 py-2 d-inline-block"></div>
           </b-col>
           <b-col md="6" class="py-2" v-for="item, index in 2" :key="index">
-            <div class="card-simple-1" style="height: 360px" @click="design = index, $bvModal.show('bv-legality')">
+            <div class="card-simple-1" style="height: 360px" @click="legal = index, $bvModal.show('bv-legality')">
               <div class="image" style="height: 360px">
                 <img :src="require('@/assets/image/legality/'+ parseInt(index + 1) + '.jpg')" class="object-fit" alt="Booking Unit">
               </div>
             </div>
           </b-col>
           <b-modal id="bv-legality" hide-footer hide-header centered>
-            <img :src="require('@/assets/image/legality/'+ parseInt(design + 1) + '.jpg')" class="object-fit" alt="Booking Unit">
+            <img :src="require('@/assets/image/legality/'+ parseInt(legal + 1) + '.jpg')" class="object-fit" alt="Booking Unit">
             <b-button class="mt-3" block @click="$bvModal.hide('bv-legality')">Tutup</b-button>
           </b-modal>
         </b-row>
@@ -413,14 +421,14 @@
             <div class="px-4 text-start">
               <h4 class="fw-bolder ff-1 mb-4">Kavling Siap Bangun</h4>
               <p class="ff-2 mb-0">Harga promo mulai :</p>
-              <h1 class="ff-1"><sub style="font-size: 1.3rem; color: gainsboro">90 Juta</sub> <u>70 Juta</u> <span class="badge bg-danger">20%</span></h1>
+              <h1 class="ff-1"><sub style="font-size: 1.3rem; color: gainsboro"><s>90 JT</s></sub> <u>70 JT</u> <span class="badge bg-danger"><span style="font-size: 1rem;">disc</span> 20JT</span></h1>
             </div>
           </b-col>
           <b-col md="6" class="py-5">
             <div class="px-4 text-start">
               <h4 class="fw-bolder ff-1 mb-4">Investasi ruko</h4>
               <p class="ff-2 mb-0">Harga promo mulai :</p>
-              <h1 class="ff-1"><sub style="font-size: 1.3rem; color: gainsboro">299 Juta</sub> <u>199 Juta</u> <span class="badge bg-danger"><span style="font-size: 1rem;">diskon</span> 100jt</span></h1>
+              <h1 class="ff-1"><sub style="font-size: 1.3rem; color: gainsboro"><s>299 JT</s></sub> <u>199 JT</u> <span class="badge bg-danger"><span style="font-size: 1rem;">disc</span> 100JT</span></h1>
             </div>
           </b-col>
         </b-row>
@@ -470,7 +478,7 @@
           </b-col>
           <b-col md="4">
              <div class="py-4">
-                <a class="btn-m-primary py-3 px-5" style="text-decoration: none !important" href="https://wa.me/+6281252203567">
+                <a class="btn-m-primary py-3 px-5 text-white" style="text-decoration: none !important" href="https://wa.me/+6281252203567">
                   <icon :icon="icon.whatsappIcon"/> Hubungi Kami
                 </a>
              </div>
@@ -492,7 +500,7 @@
                       <b-form-input id="name-input" :state="validateState('phone')" aria-describedby="name-feedback" v-model="input.phone"></b-form-input>
                       <b-form-feedback id="name-feedback">Nomor Hp tidak boleh kosong.</b-form-feedback>
                     </b-form-group>
-                    <button class="btn-m-primary py-3 px-5 mt-3" type="submit" :disabled="submitStatus === 'PENDING'">Kirim</button>
+                    <button class="btn-m-primary py-3 px-5 mt-3 text-white" type="submit" :disabled="submitStatus === 'PENDING'">Kirim</button>
                   </form>
                 </div>
             </b-card>
@@ -568,6 +576,7 @@ export default {
       },
       question: 0,
       order: 0,
+      legal: 0,
       gallery: 0,
       location: 0,
       comision: 0,
@@ -618,7 +627,7 @@ export default {
       ],
       investations: [
         { name: 'Investasi Masa Kini', text: 'Kenapa Dikatakan Investasi masa Kini : Lokasi Nol Jalan Raya Lalu Lintas Ramai Cocok Untuk Usaha / Bisnis Usaha Buat Bayar Angsuran' },
-        { name: 'Investasi Masa Kini', text: 'Kenapa Dikatakan Investasi Masa Depan : Lokasi Nol Jalan Raya Harga  Property nya Akan Cepat Naik Melambung Tinggi' },
+        { name: 'Investasi Masa Depan', text: 'Kenapa Dikatakan Investasi Masa Depan : Lokasi Nol Jalan Raya Harga  Property nya Akan Cepat Naik Melambung Tinggi' },
       ],
       schemas: [
         { name: 'Tanpa bank' },
