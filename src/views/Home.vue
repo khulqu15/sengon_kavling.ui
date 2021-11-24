@@ -478,7 +478,7 @@
           </b-col>
           <b-col md="4">
              <div class="py-4">
-                <a class="btn-m-primary py-3 px-5 text-white" style="text-decoration: none !important" href="https://wa.me/+6281252203567">
+                <a class="btn-m-primary py-3 px-5 text-white" style="text-decoration: none !important" href="https://wa.me/+6285204559555">
                   <icon :icon="icon.whatsappIcon"/> Hubungi Kami
                 </a>
              </div>
@@ -663,7 +663,7 @@ export default {
       return $dirty ? !$error : null;
     },
     submit() {
-      let cpContact = '+6281252203567'
+      let cpContact = '+6285204559555'
       let message = 'Haloo.. Nama saya adalah ' + this.input.name + ', Saya ingin mengetahui informasi lebih lanjut mengenai Kavling Grand Sengon dengan nomor hp ' + this.input.phone
       this.$v.$touch()
       if (this.$v.$invalid) {
