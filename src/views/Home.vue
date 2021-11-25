@@ -421,14 +421,14 @@
             <div class="px-4 text-start">
               <h4 class="fw-bolder ff-1 mb-4">Kavling Siap Bangun</h4>
               <p class="ff-2 mb-0">Harga promo mulai :</p>
-              <h1 class="ff-1"><sub style="font-size: 1.3rem; color: gainsboro"><s>90 JT</s></sub> <u>70 JT</u> <span class="badge bg-danger"><span style="font-size: 1rem;">disc</span> 20JT</span></h1>
+              <h1 class="ff-1"><sub style="font-size: 1.2rem; color: gainsboro"><s>90 JT</s></sub> <span class="fw-bold text-danger">70 JT</span> <span class="badge bg-danger"><span style="font-size: 1rem;">disc</span> 20JT</span></h1>
             </div>
           </b-col>
           <b-col md="6" class="py-5">
             <div class="px-4 text-start">
               <h4 class="fw-bolder ff-1 mb-4">Investasi ruko</h4>
               <p class="ff-2 mb-0">Harga promo mulai :</p>
-              <h1 class="ff-1"><sub style="font-size: 1.3rem; color: gainsboro"><s>299 JT</s></sub> <u>199 JT</u> <span class="badge bg-danger"><span style="font-size: 1rem;">disc</span> 100JT</span></h1>
+              <h1 class="ff-1"><sub style="font-size: 1.2rem; color: gainsboro"><s>299 JT</s></sub> <span class="fw-bold text-danger">199 JT</span> <span class="badge bg-danger"><span style="font-size: 1rem;">disc</span> 100JT</span></h1>
             </div>
           </b-col>
         </b-row>
